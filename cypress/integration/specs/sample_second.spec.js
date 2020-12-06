@@ -1,4 +1,4 @@
-describe('My First Test', () => {
+xdescribe('My First Test', () => {
     it('clicking "type" shows the right headings', () => {
         cy.visit('/')
 

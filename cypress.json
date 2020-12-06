@@ -1,1 +1,7 @@
-{}
+{
+  "baseUrl": "http://rc-portal.seamlesspay.com",
+  "pluginsFile": false,
+  "supportFile": false,
+  "fixturesFolder": false,
+  "video": false
+}

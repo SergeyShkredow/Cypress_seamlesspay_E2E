@@ -1,4 +1,4 @@
-describe('My First Test', () => {
+xdescribe('My First Test', () => {  // xdescribe - skip test
     it('Does not do much!', () => {
         cy.visit('/')
         cy.contains('type').click()

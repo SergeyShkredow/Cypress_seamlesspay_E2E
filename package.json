@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run:test": "./node_modules/.bin/cypress open",
+    "run:test_1": "./node_modules/.bin/cypress open",
+    "run:test": "./node_modules/.bin/cypress run --spec './**/*.spec.js'",
     "test:cypress:prod:open": "./node_modules/.bin/cypress open --config-file ./cypress/configs/config.prod.json",
-    "test:cypress:dev:open": "./node_modules/.bin/cypress open --config-file ./cypress/configs/config.dev.json",
+    "test:cypress:dev:open": "./node_modules/.bin/cypress open  --config-file ./cypress/configs/config.dev.json",
     "test:cypress:test:open": "./node_modules/.bin/cypress open --config-file ./cypress/configs/config.test.json"
   },
   "author": "",

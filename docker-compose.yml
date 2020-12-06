@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  # this is the web application we are going to test
+#  sentimentalyzer:
+#    build: ../
+#    environment:
+#      - PORT=8123
+  # Cypress container
+  cypress:
+    # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+    image: "cypress/included:3.2.0"
+#    depends_on:
+#      - sentimentalyzer
+    environment:
+#       pass base url to test pointing at the web application
+      - CYPRESS_baseUrl=http://portal.seamlesspay.com
+    # share the current folder as volume to avoid copying
+    working_dir: /../seamless_pay_E2E_Cypress
+    volumes:
+      - ./:/seamless_pay_E2E_Cypress
+#    command: npm run ./node_modules/.bin/cypress open --config-file, ./cypress/configs/config.dev.json

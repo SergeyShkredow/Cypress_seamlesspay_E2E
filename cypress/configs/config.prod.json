@@ -1,5 +1,6 @@
 {
   "env": {
     "domain": "prod"
-  }
+  },
+  "video": false
 }
